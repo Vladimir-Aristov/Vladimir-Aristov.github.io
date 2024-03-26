@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Я - студент ВШЭ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Я - студент ВШЭ</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="feedback.html">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <!-- Общий flex контейнер для всего содержимого -->
+    <div class="content-container">
+        <!-- Контейнер для текста и колонок -->
+        <div class="info-and-columns">
+            <div class="info-container">
+                <section>
+                    <h2>Аристов Владимир</h2>
+                    <p>Мне 21 год и я студент <a href="https://www.hse.ru/ba/am/" target="_blank">ВШЭ</a>, также работник в <a href="https://www.rnbconsulting.ru/" target="_blank">R&B Consulting</a>. Полученные мною знания я стараюсь по максимуму использовать в повседневной жизни и области работы:</p>
+                </section>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <h3>Теория</h3>
+                    <ul>
+                        <li>Линейная Алгебра</li>
+                        <li>Теория вероятностей и Математическая статистика</li>
+                        <li>Публичное право</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Практика</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Инструменты для аналитики, Tableau</li>
+                        <li>Коммерческое право</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Контейнер для фотографии -->
+        <div class="photo-container">
+            <img src="IMG_1454.jpeg" alt="Аристов Владимир">
+            <center>Это я</center>
+        </div>
+    </div>
+
+    <div id="chat-container" class="chat-container hidden">
+        <div class="chat-header">
+            <span>Чат с автором</span>
+            <span class="chat-close" id="close-chat">X</span>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" placeholder="Введите сообщение...">
+            <button id="chat-send">📩</button>
+            <button id="voice-message">🎤</button>
+        </div>
+    </div>
+
+    <button id="chat-icon">&#9993;</button>
+
+    <div id="map" style="height: 400px; width: 100%;"></div>
+</main>    
+    <footer>
+        <p>Контактная информация: <a href="mailto:vvaristov@edu.hse.ru">vvaristov@edu.hse.ru</a></p>
+    </footer>
+<script src="scripts.js"></script>
+</body>
+</html>
