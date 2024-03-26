@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь</title>
+</head>
+<body>
+    <header>
+        <h1>Обратная связь</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="feedback.html">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-feedback">
+            <form action="your_server_endpoint" method="POST">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" pattern="[+]{0,1}[0-9]{10,12}" placeholder="+1234567890" required>
+            
+                <label for="course">Выберите намерение:</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Выберите...</option>
+                    <option value="project">Обсудить проект</option>
+                    <option value="Ind_meet">Индивидуальная встреча</option>
+                </select>
+            
+                <p>Предпочитаемый способ связи:</p>
+                <div>
+                    <input type="checkbox" id="contact_email" name="contact_pref" value="email">
+                    <label for="contact_email">Email</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="contact_phone" name="contact_pref" value="phone">
+                    <label for="contact_phone">Телефон</label>
+                </div>
+            
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Контактная информация: <a href="mailto:vvaristov@edu.hse.ru">vvaristov@edu.hse.ru</a></p>
+    </footer>
+</body>
+</html>
