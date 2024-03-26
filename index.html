@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Я - студент ВШЭ</title>
+    <style>
+        .row {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .column, .info-container {
+            flex: 50%;
+            padding: 10px;
+        }
+        .info-and-text {
+            display: flex;
+            justify-content: space-between;
+        }
+        .photo-container {
+            flex: 1;
+            text-align: right; /* Выравниваем фото справа */
+        }
+        .photo-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Я - студент ВШЭ</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="feedback.html">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="info-and-text">
+            <div class="info-container">
+                <section>
+                    <h2>Аристов Владимир</h2>
+                    <p>Мне 21 год и я студент <a href="https://www.hse.ru/ba/am/" target="_blank">ВШЭ</a>, также работник в <a href="https://www.rnbconsulting.ru/" target="_blank">R&B Consulting</a>. Полученные мною знания я стараюсь по максимуму использовать в повседневной жизни и области работы:</p>
+                </section>
+                <div class="row">
+                    <div class="column">
+                        <h3>Теория</h3>
+                        <ul>
+                            <li>Линейная Алгебра</li>
+                            <li>Теория вероятнестей и Математическая статистика</li>
+                            <li>Публичное право</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Практика</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Инструменты для аналитики, Tableau</li>
+                            <li>Коммерческое право</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-container">
+                <!-- Предположим, что ваша фотография называется "my_photo.jpg" и находится в той же папке, что и HTML-файл -->
+                <img src="IMG_1454.jpeg" alt="Аристов Владимир">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Контактная информация: <a href="mailto:vvaristov@edu.hse.ru">vvaristov@edu.hse.ru</a></p>
+    </footer>
+</body>
+</html>
